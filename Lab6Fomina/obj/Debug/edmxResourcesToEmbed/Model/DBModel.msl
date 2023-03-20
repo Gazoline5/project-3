@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище dfominaModelContainer" CdmEntityContainer="dfominaEntities">
+    <EntitySetMapping Name="SecretQuestion">
+      <EntityTypeMapping TypeName="dfominaModel.SecretQuestion">
+        <MappingFragment StoreEntitySet="SecretQuestion">
+          <ScalarProperty Name="IDSecretQuestion" ColumnName="IDSecretQuestion" />
+          <ScalarProperty Name="SecretQuestion1" ColumnName="SecretQuestion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="dfominaModel.Users">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="CodeWord" ColumnName="CodeWord" />
+          <ScalarProperty Name="IDSecretQuestion" ColumnName="IDSecretQuestion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
